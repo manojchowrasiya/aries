@@ -278,17 +278,190 @@
                                                  <div class="row-form">
                                                     <div class="span3">CV Based Shortlisting:</div>
                                                     <div class="span9">
-                                                        <input type="text" name="nick"/>
+                                                        <label class="radio inline" for="cvbasedshortlisting-0">
+      1
+                                                          <input type="radio" name="cvbasedshortlisting" id="cvbasedshortlisting-0" value="1" checked="checked" required="required">
+                                                      </label>
+                                                      <label class="radio inline" for="cvbasedshortlisting-1">
+                                                          2
+                                                          <input type="radio" name="cvbasedshortlisting" id="cvbasedshortlisting-1" value="2" required="required">
+                                                      </label>
+                                                      <label class="radio inline" for="cvbasedshortlisting-2">
+                                                          3
+                                                          <input type="radio" name="cvbasedshortlisting" id="cvbasedshortlisting-2" value="3" required="required">
+                                                      </label>
+                                                      <label class="radio inline" for="cvbasedshortlisting-3">
+                                                          4
+                                                          <input type="radio" name="cvbasedshortlisting" id="cvbasedshortlisting-3" value="4" required="required">
+                                                      </label>
+                                                      <label class="radio inline" for="cvbasedshortlisting-4">
+                                                          5
+                                                          <input type="radio" name="cvbasedshortlisting" id="cvbasedshortlisting-4" value="5" required="required">
+                                                      </label>
                                                     </div>
                                                 </div>
                                                  <div class="row-form">
-                                                    <div class="span3">Nickname:</div>
+                                                    <div class="span3">Extra Curricular Activities:</div>
                                                     <div class="span9">
-                                                        <input type="text" name="nick"/>
+                                                     <label class="radio inline" for="extraactivity-0">
+                                                      1
+                                                      <input type="radio" name="extraactivity" id="extraactivity-0" value="1" checked="checked" required="required">
+                                                  </label>
+                                                  <label class="radio inline" for="extraactivity-1">
+                                                      2
+                                                      <input type="radio" name="extraactivity" id="extraactivity-1" value="2" required="required">
+                                                  </label>
+                                                  <label class="radio inline" for="extraactivity-2">
+                                                      3
+                                                      <input type="radio" name="extraactivity" id="extraactivity-2" value="3" required="required">
+                                                  </label>
+                                                  <label class="radio inline" for="extraactivity-3">
+                                                      4
+                                                      <input type="radio" name="extraactivity" id="extraactivity-3" value="4" required="required">
+                                                  </label>
+                                                  <label class="radio inline" for="extraactivity-4">
+                                                      5
+                                                      <input type="radio" name="extraactivity" id="extraactivity-4" value="5" required="required">
+                                                  </label>
+                                              </div>
+                                                </div>
+                                                 <div class="row-form">
+                                                    <div class="span3">No of Rounds:</div>
+                                                    <div class="span9">
+                                                        <select id="rounds" name="rounds">
+                                                          <option value="Male">1</option>
+                                                          <option value="Female">2</option>
+                                                          <option value="Female">3</option>
+                                                          <option value="Female">4</option>
+                                                          <option value="Female">5</option>
+                                                          <option value="Female">6</option>
+                                                          <option value="Female">7</option>
+                                                      </select>
                                                     </div>
                                                 </div>
-                                                                                
-                                        </fieldset>
+
+                                                <?php for ($i=1; $i <=7 ; $i++) { ?>
+                                                <div class="control-group">
+                                                  <label class="control-label" for="round<?php echo $i;?>">Round <?php echo $i;?></label>
+                                                  <div class="controls">
+                                                    <select id="round<?php echo $i;?>" name="round<?php echo $i;?>" class="input-xlarge">
+                                                      <option value="Male">1</option>
+                                                      <option value="Female">2</option>
+                                                      <option value="Female">3</option>
+                                                      <option value="Female">4</option>
+                                                      <option value="Female">5</option>
+                                                      <option value="Female">6</option>
+                                                      <option value="Female">7</option>
+                                                  </select>
+                                              </div>
+                                          </div>
+                                          <?php }?>
+
+                                          <div class="control-group">
+                                              <label class="control-label" for="personality_traits">Which Personality traits does the company gives special importance to, during the entire selection process?
+                                              </label>
+                                              <div class="controls">
+                                                <label class="checkbox" for="personality_traits-0">
+                                                  <input type="checkbox" name="personality_traits" id="personality_traits-0" value="Option one">
+                                                  Option one
+                                              </label>
+                                              <label class="checkbox" for="personality_traits-1">
+                                                  <input type="checkbox" name="personality_traits" id="personality_traits-1" value="Option two">
+                                                  Option two
+                                              </label> <label class="checkbox" for="personality_traits-2">
+                                              <input type="checkbox" name="personality_traits" id="personality_traits-2" value="Option two">
+                                              Option two
+                                          </label> <label class="checkbox" for="personality_traits-3">
+                                          <input type="checkbox" name="personality_traits" id="personality_traits-3" value="Option two">
+                                          Option two
+                                      </label> <label class="checkbox" for="personality_traits-4">
+                                      <input type="checkbox" name="personality_traits" id="personality_traits-4" value="Option two">
+                                      Option two
+                                  </label>
+                              </div>
+                          </div>
+
+                          <div class="control-group">
+                              <label class="control-label" for="type_group_activity">Type of Group Activity
+                              </label>
+                              <div class="controls">
+                                <label class="checkbox" for="type_group_activity-0">
+                                  <input type="checkbox" name="type_group_activity" id="type_group_activity-0" value="Option one">
+                                  Option one
+                              </label>
+                              <label class="checkbox" for="type_group_activity-1">
+                                  <input type="checkbox" name="type_group_activity" id="type_group_activity-1" value="Option two">
+                                  Option two
+                              </label> <label class="checkbox" for="type_group_activity-1">
+                              <input type="checkbox" name="type_group_activity" id="type_group_activity-2" value="Option two">
+                              Option two
+                          </label> <label class="checkbox" for="type_group_activity-1">
+                          <input type="checkbox" name="type_group_activity" id="type_group_activity-3" value="Option two">
+                          Option two
+                      </label> <label class="checkbox" for="type_group_activity-1">
+                      <input type="checkbox" name="type_group_activity" id="type_group_activity-4" value="Option two">
+                      Option two
+                  </label>
+              </div>
+          </div>
+          <!-- Textarea -->
+          <div class="control-group">
+              <label class="control-label" for="gd_topic">A6.2 Please mention your Group Discussion topic or little 
+                background if it was a role play, case study or any other group activity</label>
+                <div class="controls">                     
+                    <textarea id="gd_topic" name="gd_topic"></textarea>
+                </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="group_size">Group Size</label>
+              <div class="controls">
+                <select id="group_size" name="group_size" class="input-xlarge">
+                  <option value="Male">1</option>
+                  <option value="Female">2</option>
+                  <option value="Female">3</option>
+                  <option value="Female">4</option>
+                  <option value="Female">5</option>
+                  <option value="Female">6</option>
+                  <option value="Female">7</option>
+              </select>
+          </div>
+      </div>
+      <div class="control-group">
+          <label class="control-label" for="gd_duration">Duration of Group Discussion</label>
+          <div class="controls">
+            <select id="gd_duration" name="gd_duration" class="input-xlarge">
+              <option value="Male">1</option>
+              <option value="Female">2</option>
+              <option value="Female">3</option>
+              <option value="Female">4</option>
+              <option value="Female">5</option>
+              <option value="Female">6</option>
+              <option value="Female">7</option>
+          </select>
+      </div>
+  </div>
+
+  <div class="control-group">
+      <label class="control-label" for="suggestion">Some specific suggestion for the aspirants?</label>
+      <div class="controls">                     
+        <textarea id="suggestion" name="suggestion"></textarea>
+    </div>
+</div>
+<div class="control-group">
+  <label class="control-label" for="noofpi">Number of Personal Interview Rounds *</label>
+  <div class="controls">
+    <select id="noofpi" name="noofpi" class="input-xlarge">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+  </select>
+</div>
+</div>
+</fieldset>
                                         <fieldset title="Step 3">
                                                 <legend>Personal data</legend>
                                                 <div class="row-form">
