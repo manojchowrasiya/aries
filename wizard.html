@@ -78,7 +78,7 @@
                             </div>                
                             <div class="data-fluid">                
 
-                                <form action="javascript:alert('Form #wizard_validate submited')" method="POST" id="wizard_validate">
+                                <form action="javascript:alert('Form #wizard_validate submited')" method="POST" id="wizard_validatsse">
                                         <fieldset title="Step 1">                            
                                                 <legend>Personal Profile Details</legend>
                                                 <div class="row-form">
@@ -171,31 +171,131 @@
                                          <fieldset title="Step 2">                            
                                                 <legend>Registration 2</legend>
                                                 <div class="row-form">
-                                                    <div class="span3">Login:</div>
+                                                    <div class="span3">10th/12th Percentage:</div>
                                                     <div class="span9">
-                                                        <input type="text" name="login" class="validate[required,minSize[4]]"/>
+                                                        <label class="radio inline" for="tenthperce-0">
+                                                          1
+                                                          <input type="radio" name="tenthperce" id="tenthperce-0" value="1" checked="checked" required="required">
+                                                      </label>
+                                                      <label class="radio inline" for="tenthperce-1">
+                                                          2
+                                                          <input type="radio" name="tenthperce" id="tenthperce-1" value="2" required="required">
+                                                      </label>
+                                                      <label class="radio inline" for="tenperc-2">
+                                                          3
+                                                          <input type="radio" name="tenthperce" id="tenthperce-2" value="3" required="required">
+                                                      </label>
+                                                      <label class="radio inline" for="tenthperce-3">
+                                                          4
+                                                          <input type="radio" name="tenthperce" id="tenthperce-3" value="4" required="required">
+                                                      </label>
+                                                      <label class="radio inline" for="tenperc-4">
+                                                          5
+                                                          <input type="radio" name="tenthperce" id="tenthperce-4" value="5" required="required">
+                                                      </label>
                                                         <span class="bottom">Required, minSize = 4</span>
                                                     </div>
                                                 </div>
                                                 <div class="row-form">
-                                                    <div class="span3">Password:</div>
+                                                    <div class="span3">Graduation Percentage:</div>
                                                     <div class="span9">
-                                                        <input type="password" name="password" class="validate[required,minSize[4],maxSize[10]]"/>
+                                                      <label class="radio inline" for="graduationperc-0">
+                                                        1
+                                                        <input type="radio" name="graduationperc" id="graduationperc-0" value="1" checked="checked" required="required">
+                                                     </label>
+                                                    <label class="radio inline" for="graduationperc-1">
+                                                        2
+                                                        <input type="radio" name="graduationperc" id="graduationperc-1" value="2" required="required">
+                                                    </label>
+                                                    <label class="radio inline" for="graduationperc-2">
+                                                        3
+                                                        <input type="radio" name="graduationperc" id="graduationperc-2" value="3" required="required">
+                                                    </label>
+                                                    <label class="radio inline" for="graduationperc-3">
+                                                        4
+                                                        <input type="radio" name="graduationperc" id="graduationperc-3" value="4" required="required">
+                                                    </label>
+                                                    <label class="radio inline" for="graduationperc-4">
+                                                        5
+                                                        <input type="radio" name="graduationperc" id="graduationperc-4" value="5" required="required">
+                                                    </label>
+                                                        <span class="bottom">Required, minSize = 4, maxSize = 10</span>
+                                                    </div>
+                                                </div>  
+                                                 <div class="row-form">
+                                                    <div class="span3">Brand Value of Graduation College:</div>
+                                                    <div class="span9">
+                                                        <label class="radio inline" for="valuegraduation-0">
+                                                      1
+                                                      <input type="radio" name="valuegraduation" id="valuegraduation-0" value="1" checked="checked" required="required">
+                                                  </label>
+                                                  <label class="radio inline" for="valuegraduation-1">
+                                                      2
+                                                      <input type="radio" name="valuegraduation" id="valuegraduation-1" value="2" required="required">
+                                                  </label>
+                                                  <label class="radio inline" for="valuegraduation-2">
+                                                      3
+                                                      <input type="radio" name="valuegraduation" id="valuegraduation-2" value="3" required="required">
+                                                  </label>
+                                                  <label class="radio inline" for="valuegraduation-3">
+                                                      4
+                                                      <input type="radio" name="valuegraduation" id="valuegraduation-3" value="4" required="required">
+                                                  </label>
+                                                  <label class="radio inline" for="valuegraduation-4">
+                                                      5
+                                                      <input type="radio" name="valuegraduation" id="valuegraduation-4" value="5" required="required">
+                                                  </label>
                                                         <span class="bottom">Required, minSize = 4, maxSize = 10</span>
                                                     </div>
                                                 </div>                                
                                                 <div class="row-form">
-                                                    <div class="span3">E-mail:</div>
+                                                    <div class="span3">Work Experience:</div>
                                                     <div class="span9">
-                                                        <input type="text" name="email" class="validate[required,custom[email]]"/>
+                                                        <!-- <input type="text" name="email" class="validate[required,custom[email]]"/> -->
+                                                        <label class="radio inline" for="workexp-0">
+                                                          1
+                                                          <input type="radio" name="workexp" id="workexp-0" value="1" checked="checked" required="required">
+                                                      </label>
+                                                      <label class="radio inline" for="workexp-1">
+                                                          2
+                                                          <input type="radio" name="workexp" id="workexp-1" value="2" required="required">
+                                                      </label>
+                                                      <label class="radio inline" for="workexp-2">
+                                                          3
+                                                          <input type="radio" name="workexp" id="workexp-2" value="3" required="required">
+                                                      </label>
+                                                      <label class="radio inline" for="workexp-3">
+                                                          4
+                                                          <input type="radio" name="workexp" id="workexp-3" value="4" required="required">
+                                                      </label>
+                                                      <label class="radio inline" for="workexp-4">
+                                                          5
+                                                          <input type="radio" name="workexp" id="workexp-4" value="5" required="required">
+                                                      </label>
                                                         <span class="bottom">Required, email</span>
                                                     </div>
-                                                </div>                                
+                                                </div>
+                                                 <div class="row-form">
+                                                    <div class="span3">CV Based Shortlisting:</div>
+                                                    <div class="span9">
+                                                        <input type="text" name="nick"/>
+                                                    </div>
+                                                </div>
+                                                 <div class="row-form">
+                                                    <div class="span3">Nickname:</div>
+                                                    <div class="span9">
+                                                        <input type="text" name="nick"/>
+                                                    </div>
+                                                </div>
+                                                                                
                                         </fieldset>
                                         <fieldset title="Step 3">
                                                 <legend>Personal data</legend>
                                                 <div class="row-form">
-                                                    <div class="span3">Nickname:</div><div class="span9"><input type="text" name="nick"/></div>
+                                                    <div class="span3">Nickname:</div>
+                                                    <div class="span9">
+                                                        <input type="text" name="nick"/>
+                                                    </div>
                                                 </div>
                                                 <div class="row-form">
                                                     <div class="span3">About:</div>
