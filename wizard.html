@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>        
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />    
+    <!--[if gt IE 8]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />        
+    <![endif]-->                
+    <title>Wizard - Aries Premium Admin Template</title>
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+    
+    <link href="css/stylesheets.css" rel="stylesheet" type="text/css" />
+    <!--[if lte IE 7]>
+        <link href="css/ie.css" rel="stylesheet" type="text/css" />
+        <script type='text/javascript' src='js/plugins/other/lte-ie7.js'></script>
+    <![endif]-->     
+    <script type='text/javascript' src='js/plugins/jquery/jquery-1.9.1.min.js'></script>
+    <script type='text/javascript' src='js/plugins/jquery/jquery-ui-1.10.1.custom.min.js'></script>
+    <script type='text/javascript' src='js/plugins/jquery/jquery-migrate-1.1.1.min.js'></script>
+    <script type='text/javascript' src='js/plugins/jquery/globalize.js'></script>
+    <script type='text/javascript' src='js/plugins/other/excanvas.js'></script>
+    
+    <script type='text/javascript' src='js/plugins/other/jquery.mousewheel.min.js'></script>
+        
+    <script type='text/javascript' src='js/plugins/bootstrap/bootstrap.min.js'></script>            
+    
+    <script type='text/javascript' src='js/plugins/cookies/jquery.cookies.2.2.0.min.js'></script>    
+    
+    <script type='text/javascript' src='js/plugins/stepywizard/jquery.stepy.js'></script>
+    
+    <script type='text/javascript' src="js/plugins/uniform/jquery.uniform.min.js"></script>
+    <script type='text/javascript' src="js/plugins/select/select2.min.js"></script>
+    
+    <script type='text/javascript' src='js/plugins/validationEngine/languages/jquery.validationEngine-en.js'></script>
+    <script type='text/javascript' src='js/plugins/validationEngine/jquery.validationEngine.js'></script>            
+    
+    <script type='text/javascript' src='js/plugins/shbrush/XRegExp.js'></script>
+    <script type='text/javascript' src='js/plugins/shbrush/shCore.js'></script>
+    <script type='text/javascript' src='js/plugins/shbrush/shBrushXml.js'></script>
+    <script type='text/javascript' src='js/plugins/shbrush/shBrushJScript.js'></script>
+    <script type='text/javascript' src='js/plugins/shbrush/shBrushCss.js'></script>    
+    
+    <script type='text/javascript' src='js/plugins.js'></script>
+    <script type='text/javascript' src='js/charts.js'></script>
+    <script type='text/javascript' src='js/actions.js'></script>
+    
+</head>
+<body>    
+    <div id="loader"><img src="img/loader.gif"/></div>
+    <div class="wrapper">
+        
+                
+        <div class="body">
+            
+           
+                        
+            <div class="content">
+                
+             <!--    <div class="page-header">
+                    <div class="icon">
+                        <span class="ico-stack-2"></span>
+                    </div>
+                    <h1>Wizard <small>METRO STYLE ADMIN PANEL</small></h1>
+                </div> -->
+
+                <div class="row-fluid">
+
+                   
+                    <div class="span6">
+
+                        <div class="block">
+                            <div class="head">
+                                <div class="icon"><i class="ico-share"></i></div>
+                                <h2>Wizard with validation</h2>
+                                <ul class="buttons">
+                                    <li><a href="#" onClick="source('wizard_validation'); return false;"><div class="icon"><span class="ico-info"></span></div></a></li>
+                                </ul>                                                                 
+                            </div>                
+                            <div class="data-fluid">                
+
+                                <form action="javascript:alert('Form #wizard_validate submited')" method="POST" id="wizard_validate">
+                                        <fieldset title="Step 1">                            
+                                                <legend>Personal Profile Details</legend>
+                                                <div class="row-form">
+                                                    <div class="span3">Full Name:</div>
+                                                    <div class="span9">
+                                                        <input type="text" name="fullname" class="validate[required,minSize[4]]"/>
+                                                        <span class="bottom">Required, minSize = 4</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row-form">
+                                                    <div class="span3">Gender:</div>
+                                                    <div class="span9">
+                                                      <!--   <input type="password" name="password" class="validate[required,minSize[4],maxSize[10]]"/> -->
+                                                      <select id="gender" name="gender">
+                                                          <option></option>
+                                                          <option value="Male">Male</option>
+                                                          <option value="Female">Female</option>
+                                                        </select>
+                                                        <span class="bottom">Required, minSize = 4, maxSize = 10</span>
+                                                    </div>
+                                                </div>   
+                                                   <div class="row-form">
+                                                    <div class="span3">Contact Number:</div>
+                                                    <div class="span9">
+                                                        <input type="text" name="contactno" class="validate[required,minSize[10]]"/>
+                                                        <span class="bottom">Required, Contact Number</span>
+                                                    </div>
+                                                </div> 
+
+                                                <div class="row-form">
+                                                    <div class="span3">E-mail Id:</div>
+                                                    <div class="span9">
+                                                        <input type="text" name="emailid" class="validate[required,custom[email]]"/>
+                                                        <span class="bottom">Required, email</span>
+                                                    </div>
+                                                </div>       
+                                                  <div class="row-form">
+                                                    <div class="span3">Total Full Time Work Experience:</div>
+                                                    <div class="span9">
+                                                        <input type="text" name="contactno" class="validate[required,minSize[10]]"/>
+                                                        <span class="bottom">Required, Contact Number</span>
+                                                    </div>
+                                                </div> 
+                                                  <div class="row-form">
+                                                    <div class="span3">Company Name (where did you do your internship) :</div>
+                                                    <div class="span9">
+                                                        <!-- <input type="text" name="contactno" class="validate[required,minSize[10]]"/> -->
+                                                            <select name="intercmpyname" id="select">
+                                                            <option>Other</option>
+                                                            <option>Alabama</option>
+                                                            <option>Alaska</option>
+                                                            <option>Arizona</option>
+                                                            <option>Arkansas</option>
+                                                            <option>California</option>
+                                                            <option>Colorado</option>
+                                                            <option>Connecticut</option>
+                                                            </select>
+                                                        <span class="bottom">Required, Contact Number</span>
+                                                    </div>
+                                                </div> 
+                                                <div class="row-form">
+                                                    <div class="span3">Project Function:</div>
+                                                    <div class="span9">
+                                                        <!-- <input type="text" name="contactno" class="validate[required,minSize[10]]"/> -->
+                                                        <label class="checkbox" for="projectfunction-0">
+                                                          <input type="checkbox" name="projectfunction[]" id="projectfunction-0" value="Option one">
+                                                          Option one
+                                                      </label>
+                                                      <label class="checkbox" for="projectfunction-1">
+                                                          <input type="checkbox" name="projectfunction[]" id="projectfunction-1" value="Option two">
+                                                          Option two
+                                                      </label> 
+                                                      <label class="checkbox" for="projectfunction-2">
+                                                          <input type="checkbox" name="projectfunction[]" id="projectfunction-2" value="Option three">
+                                                          Option three
+                                                      </label> 
+                                                      <label class="checkbox" for="projectfunction-3">
+                                                          <input type="checkbox" name="projectfunction[]" id="projectfunction-3" value="Option four">
+                                                          Option four
+                                                      </label> 
+                                                      <label class="checkbox" for="projectfunction-4">
+                                                      <input type="checkbox" name="projectfunction[]" id="projectfunction-4" value="Option five">
+                                                      Option five
+                                                     </label>
+                                                        <span class="bottom">Required, Contact Number</span>
+                                                    </div>
+                                                </div>                                             
+                                                                         
+                                        </fieldset>
+                                         <fieldset title="Step 2">                            
+                                                <legend>Registration 2</legend>
+                                                <div class="row-form">
+                                                    <div class="span3">Login:</div>
+                                                    <div class="span9">
+                                                        <input type="text" name="login" class="validate[required,minSize[4]]"/>
+                                                        <span class="bottom">Required, minSize = 4</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row-form">
+                                                    <div class="span3">Password:</div>
+                                                    <div class="span9">
+                                                        <input type="password" name="password" class="validate[required,minSize[4],maxSize[10]]"/>
+                                                        <span class="bottom">Required, minSize = 4, maxSize = 10</span>
+                                                    </div>
+                                                </div>                                
+                                                <div class="row-form">
+                                                    <div class="span3">E-mail:</div>
+                                                    <div class="span9">
+                                                        <input type="text" name="email" class="validate[required,custom[email]]"/>
+                                                        <span class="bottom">Required, email</span>
+                                                    </div>
+                                                </div>                                
+                                        </fieldset>
+                                        <fieldset title="Step 3">
+                                                <legend>Personal data</legend>
+                                                <div class="row-form">
+                                                    <div class="span3">Nickname:</div><div class="span9"><input type="text" name="nick"/></div>
+                                                </div>
+                                                <div class="row-form">
+                                                    <div class="span3">About:</div>
+                                                    <div class="span9">
+                                                        <textarea name="about" class="validate[required,minSize[5],maxSize[150]]"></textarea>
+                                                        <span class="bottom">Required, minSize = 5, maxSize = 150</span>
+                                                    </div>
+                                                </div>  
+                                        </fieldset>
+
+                                        <button type="submit" class="btn btn-primary finish">Submit</button>
+                                </form>                
+
+                            </div>
+
+                        </div>
+
+                    </div>            
+
+                </div>                
+            
+        </div>
+        
+    </div>
+    <div class="dialog" id="source" style="display: none;" title="Source"></div>
+</body>
+</html>
