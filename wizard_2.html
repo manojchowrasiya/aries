@@ -62,10 +62,10 @@
                     <h1>Wizard <small>METRO STYLE ADMIN PANEL</small></h1>
                 </div> -->
 
-                <div class="row-fluid">
+                <div class="row-fluid center">
 
                    
-                    <div class="span6">
+                    <div class="span10">
 
                         <div class="block">
                             <div class="head">
@@ -77,19 +77,19 @@
                             </div>                
                             <div class="data-fluid">                
 
-                                <form action="javascript:alert('Form #wizard_validate submited')" method="POST" id="wizard_validate">
+                                <form action="javascript:alert('Form #wizard_validate submited')" method="POST" id="wizard_validate_f">
                                         <fieldset title="Step 1">                            
                                                 <legend>Personal Profile Details</legend>
                                                 <div class="row-form">
-                                                    <div class="span3">Full Name:</div>
-                                                    <div class="span9">
+                                                    <div class="span4">Full Name:</div>
+                                                    <div class="span5">
                                                         <input type="text" name="fullname" class="validate[required,minSize[4]]"/>
                                                         <span class="bottom">Required, minSize = 4</span>
                                                     </div>
                                                 </div>
                                                 <div class="row-form">
-                                                    <div class="span3">Gender:</div>
-                                                    <div class="span9">
+                                                    <div class="span4">Gender:</div>
+                                                    <div class="span5">
                                                       <!--   <input type="password" name="password" class="validate[required,minSize[4],maxSize[10]]"/> -->
                                                       <select id="gender" name="gender">
                                                           <option></option>
@@ -167,7 +167,86 @@
                                                 </div>                                             
                                                                          
                                         </fieldset>
-                                         <fieldset title="Step 2">                            
+                                           <fieldset title="Step 1">                            
+                                                <legend>Personal Profile Details</legend>
+                                                <div class="row-form">
+                                                    <div class="span3">Project Sub Domain / Department , if applicable</div>
+                                                    <div class="span9">
+                                                        <input type="text" name="fullname" class="validate[required,minSize[4]]"/>
+                                                        <span class="bottom">Required, minSize = 4</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row-form">
+                                                    <div class="span6">Location:</div>
+                                                     <div class="span9">
+                                                        <input type="text" name="fullname" class="validate[required,minSize[4]]"/>
+                                                      </div>
+                                               
+                                                </div>   
+                                                   <div class="row-form">
+                                                    <div class="span3">Duration of Internship:</div>
+                                                    <div class="span9">
+                                                        <!-- <input type="text" name="contactno" class="validate[required,minSize[1]]"/> -->
+                                                         <input type="text" class="datepicker"/>
+                                                        <span class="bottom">Required, Contact Number</span>
+                                                    </div>
+                                                </div> 
+     
+                                                  <div class="row-form">
+                                                    <div class="span3">Total Full Time Work Experience:</div>
+                                                    <div class="span9">
+                                                        <input type="text" name="contactno" class="validate[required,minSize[10]]"/>
+                                                        <span class="bottom">Required, Contact Number</span>
+                                                    </div>
+                                                </div> 
+                                                  <div class="row-form">
+                                                    <div class="span3">Company Name (where did you do your internship) :</div>
+                                                    <div class="span9">
+                                                        <!-- <input type="text" name="contactno" class="validate[required,minSize[10]]"/> -->
+                                                            <select name="intercmpyname" id="select">
+                                                            <option>Other</option>
+                                                            <option>Alabama</option>
+                                                            <option>Alaska</option>
+                                                            <option>Arizona</option>
+                                                            <option>Arkansas</option>
+                                                            <option>California</option>
+                                                            <option>Colorado</option>
+                                                            <option>Connecticut</option>
+                                                            </select>
+                                                        <span class="bottom">Required, Contact Number</span>
+                                                    </div>
+                                                </div> 
+                                                <div class="row-form">
+                                                    <div class="span3">Project Function:</div>
+                                                    <div class="span9">
+                                                        <!-- <input type="text" name="contactno" class="validate[required,minSize[10]]"/> -->
+                                                        <label class="checkbox" for="projectfunction-0">
+                                                          <input type="checkbox" name="projectfunction[]" id="projectfunction-0" value="Option one">
+                                                          Option one
+                                                      </label>
+                                                      <label class="checkbox" for="projectfunction-1">
+                                                          <input type="checkbox" name="projectfunction[]" id="projectfunction-1" value="Option two">
+                                                          Option two
+                                                      </label> 
+                                                      <label class="checkbox" for="projectfunction-2">
+                                                          <input type="checkbox" name="projectfunction[]" id="projectfunction-2" value="Option three">
+                                                          Option three
+                                                      </label> 
+                                                      <label class="checkbox" for="projectfunction-3">
+                                                          <input type="checkbox" name="projectfunction[]" id="projectfunction-3" value="Option four">
+                                                          Option four
+                                                      </label> 
+                                                      <label class="checkbox" for="projectfunction-4">
+                                                      <input type="checkbox" name="projectfunction[]" id="projectfunction-4" value="Option five">
+                                                      Option five
+                                                     </label>
+                                                        <span class="bottom">Required, Contact Number</span>
+                                                    </div>
+                                                </div>                                             
+                                                                         
+                                        </fieldset>
+
+                                         <fieldset title="Step 3">                            
                                                 <legend>Registration 2</legend>
                                                 <div class="row-form">
                                                     <div class="span3">10th/12th Percentage:</div>
